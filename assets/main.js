@@ -28,7 +28,9 @@ function CreateBox(getText){
 InputElement.onchange = function(){
     var getText = InputElement.value;
     CreateBox(getText);
-    console.log(getText);
+    var displaySearch = document.querySelector('.history-search');
+    displaySearch.style.display = "block";
+    console.log(displaySearch);
 }
 
 function Search(){
