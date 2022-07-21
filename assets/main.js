@@ -11,7 +11,7 @@ function CreateBox(getText){
     elementTest.appendChild(node);
     var nodeHistory = document.createElement("div");
     node.appendChild(nodeHistory);
-    nodeHistory.setAttribute("class","history-search");
+    nodeHistory.setAttribute("class","box-history");
     var icon_1 = document.createElement("i");
     nodeHistory.appendChild(icon_1);
     icon_1.setAttribute("class","fa-solid fa-clock");
@@ -22,6 +22,7 @@ function CreateBox(getText){
     var icon_2 = document.createElement("i");
     nodeHistory.appendChild(icon_2);
     icon_2.setAttribute("class","fa-solid fa-trash");
+    this.parentElement
 }
 
 InputElement.onchange = function(){
